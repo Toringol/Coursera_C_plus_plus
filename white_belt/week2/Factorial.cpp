@@ -11,11 +11,12 @@
 #include <iostream>
 
 int Factorial(int number) {
-	int result = 1;
-	for (int i = 2; i <= number; ++i) {
-		result *= i;
+	if (number <= 1) {
+		return 1;
 	}
-	return result;
+	else {
+		return number * Factorial(number - 1);
+	}
 }
 
 int main() {
