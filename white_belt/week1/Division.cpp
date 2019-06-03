@@ -8,7 +8,7 @@
 
 int main() {
 	int a, b;
-	cin >> a >> b;
+	std::cin >> a >> b;
 
 	if (b == 0) {
 		std::cout << "Impossible" << std::endl;
