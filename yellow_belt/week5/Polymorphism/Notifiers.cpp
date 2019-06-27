@@ -45,7 +45,7 @@ class SmsNotifier : public INotifier {
 public:
 	SmsNotifier(const string& telephoneNumber) : telephoneNumber_(telephoneNumber) {}
 
-	void Notify(const string& message) override {
+	void Notify(const string& message) const override {
 		SendSms(telephoneNumber_, message);
 	}
 
@@ -57,7 +57,7 @@ class EmailNotifier : public INotifier {
 public:
 	EmailNotifier(const string& emailAddress) : emailAddress_(emailAddress) {}
 
-	void Notify(const string& message) override {
+	void Notify(const string& message) const override {
 		SendEmail(emailAddress_, message);
 	}
 
