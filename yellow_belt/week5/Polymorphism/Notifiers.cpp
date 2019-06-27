@@ -38,7 +38,7 @@ void SendEmail(const string& email, const string& message) {
 
 class INotifier {
 public:
-	virtual void Notify(const string& message) = 0;
+	virtual void Notify(const string& message) const = 0;
 };
 
 class SmsNotifier : public INotifier {
