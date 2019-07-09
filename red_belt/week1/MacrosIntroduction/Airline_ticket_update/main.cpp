@@ -75,12 +75,12 @@
 
 using namespace std;
 
-#define UPDATE_FIELD(ticket, field, values) {				\
-					auto it = values.find(#field);			\
-					if (it != values.end()) {				\
-						istringstream is(it->second);		\
-						is >> ticket.field;					\
-					}										\
+#define UPDATE_FIELD(ticket, field, values) {					\
+					auto it = values.find(#field);		\
+					if (it != values.end()) {		\
+						istringstream is(it->second);	\
+						is >> ticket.field;		\
+					}					\
 }
 
 
