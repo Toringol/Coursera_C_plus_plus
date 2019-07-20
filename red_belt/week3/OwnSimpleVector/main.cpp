@@ -23,7 +23,7 @@
 
 #include <algorithm>
 #include <iostream>
-#include "student.h"
+#include "simpleVector.h"
 
 using namespace std;
 
